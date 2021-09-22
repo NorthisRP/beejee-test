@@ -1,0 +1,20 @@
+.header {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(64, 43, 255);
+  box-shadow: black 1px 1px 4px;
+}
+.header-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  &:hover {
+    color: rgb(205, 255, 248);
+  }
+}
+body {
+  margin: 0;
+}

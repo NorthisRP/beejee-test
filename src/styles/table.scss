@@ -1,0 +1,39 @@
+.MuiTableContainer-root {
+  margin: 30px auto;
+  width: 95vw !important;
+  background-color: rgb(245, 245, 245);
+  border-radius: 12px;
+}
+td {
+  box-sizing: border-box;
+  max-width: 450px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+thead {
+  background-color: rgb(64, 43, 255);
+}
+.MuiTableCell-head {
+  color: white !important;
+  position: relative;
+
+  &.clickable {
+    cursor: pointer;
+  }
+  &.sort::after {
+    transition: 0.3s;
+    content: "→";
+    position: absolute;
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
+  &.sort.inverted::after {
+    transform: rotate(-90deg);
+  }
+}
+tbody {
+  height: 60vh;
+}
+.MuiPagination-root {
+  padding: 10px;
+}
