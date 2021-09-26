@@ -23,12 +23,5 @@ export const useAuth = () => {
     dispatch(saveToken(""));
   }, [dispatch]);
 
-  // useEffect(() => {
-  //   const data = JSON.parse(localStorage.getItem(storageName));
-  //   if (data && data.token) {
-  //     login(data.token);
-  //   }
-  // }, [login]);
-
   return { login, logout, getToken };
 };
